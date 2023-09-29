@@ -4,7 +4,7 @@ import java.util.List;
 
 public class IncidenciaDependenciaImpl extends IncidenciaImpl implements IncidenciaDependencia {
 	// Atributos Hijos
-	private List<Cambios> cambios;
+	private Cambios cambioSolicitado;
 	private double metrosCuadrados;
 
 	// Discriminador
@@ -13,12 +13,12 @@ public class IncidenciaDependenciaImpl extends IncidenciaImpl implements Inciden
 	}
 
 	@Override
-	public List<Cambios> getCambios() {
-		return cambios;
+	public Cambios getCambioSolicitado() {
+		return cambioSolicitado;
 	}
 
-	public void setCambios(List<Cambios> cambios) {
-		this.cambios = cambios;
+	public void setCambioSolicitado(Cambios cambioSolicitado) {
+		this.cambioSolicitado = cambioSolicitado;
 	}
 
 	@Override

@@ -29,7 +29,5 @@ public class IncidenciaDeficienciaImpl extends IncidenciaImpl implements Inciden
 	public void setNotificadoSABAS(boolean notificadoSABAS) {
 		this.notificadoSABAS = notificadoSABAS;
 	}
-	
-	
 
 }

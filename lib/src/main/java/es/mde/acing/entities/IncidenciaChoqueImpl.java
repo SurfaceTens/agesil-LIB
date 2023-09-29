@@ -1,10 +1,8 @@
 package es.mde.acing.entities;
 
-import java.util.List;
-
 public class IncidenciaChoqueImpl extends IncidenciaImpl implements IncidenciaChoque {
 	// Atributos Hijos
-	private List<Trabajos> trabajos;
+	private Trabajos trabajoSolicitado;
 
 	// Discriminador
 	public static enum Trabajos {
@@ -12,12 +10,12 @@ public class IncidenciaChoqueImpl extends IncidenciaImpl implements IncidenciaCh
 	}
 
 	@Override
-	public List<Trabajos> getTrabajos() {
-		return trabajos;
+	public Trabajos getTrabajoSolicitado() {
+		return trabajoSolicitado;
 	}
 
-	public void setTrabajos(List<Trabajos> trabajos) {
-		this.trabajos = trabajos;
+	public void setTrabajoSolicitado(Trabajos trabajoSolicitado) {
+		this.trabajoSolicitado = trabajoSolicitado;
 	}
 
 }
